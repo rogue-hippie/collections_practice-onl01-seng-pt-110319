@@ -44,7 +44,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.except
+  array.each_with_index.collect 
 end 
 
 users.except(myself).each do |user|
