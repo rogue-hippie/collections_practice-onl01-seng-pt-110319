@@ -44,9 +44,14 @@ def sum_array(array)
 end
 
 def add_s(array)
-  
+  array.each_with_index.collect{|element, index| 
+      if index =! 3
+     element + "s"
+  elsif index == 3
+     element
+  end
+     }
 end 
 
-users.except(myself).each do |user|
-  user.some_method
+
   
