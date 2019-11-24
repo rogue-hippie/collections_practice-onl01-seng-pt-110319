@@ -45,7 +45,7 @@ end
 
 def add_s(array)
   array.each_with_index.collect{|element, index| 
-      if index =! 3
+      if index != 3
      element + "s"
   elsif index == 3
      element
